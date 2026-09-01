@@ -78,11 +78,11 @@ The specs are committed, so this is auditable rather than a claim: [RestoPos](ht
 
 **Forecasting daily sales for a restaurant, from 227 days of its real operating data.**
 
-The finding is the interesting part, and it is not the flattering one: **a day-of-week historical average beat both the Ridge and the gradient boosting model.** All three land inside the same bootstrap confidence interval, so the top three are **statistically tied**, and I say so rather than crowning a winner from noise.
+Three findings, and two of them are negative. **A day-of-week average beat both the Ridge and the gradient boosting model**, and all three sit inside the same bootstrap interval, so they are statistically tied. Then I added El Salvador's holiday calendar and daily weather history, and **both made the models worse**.
 
-Permutation importance shows why. The model spent eighteen features rediscovering *what day is it, and how has business been lately*, which is exactly what the simple average already encodes. Everything beats the manager's natural heuristic by 18 to 28 percent, and nothing justifies shipping a trained model here.
+The third finding is the one worth acting on. Rain barely moves total sales, but it **doubles the delivery share of revenue**, from 12% to 25% (p = 0.001). Rain does not remove demand, it relocates it, which is exactly why weather cannot forecast the total: the channels compensate. And because the delivery marketplace takes an effective 27% cut, a rainy day converts the same revenue into **3.25 points less margin** (p = 0.0009).
 
-Validation is **walk-forward, never a random split**, and six tests in the suite exist purely to prove no feature can see its own future.
+Weather is split into an **operational** mode (yesterday's observed weather, what production could actually use) and an **explanatory** one, because tomorrow's weather is a forecast, not a fact. Validation is walk-forward, never a random split, and nine of the fifteen tests exist purely to prove no feature can see its own future.
 
 <br>
 
