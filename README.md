@@ -68,6 +68,24 @@ The specs are committed, so this is auditable rather than a claim: [RestoPos](ht
 
 ## 🧮 Data and algorithms
 
+### 📉 [wings-forecast](https://github.com/raulben6/wings-forecast)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![Time Series](https://img.shields.io/badge/Time_Series-8B5CF6?style=flat-square)
+![Walk-forward](https://img.shields.io/badge/Walk_forward_validation-10B981?style=flat-square)
+
+**Forecasting daily sales for a restaurant, from 227 days of its real operating data.**
+
+The finding is the interesting part, and it is not the flattering one: **a day-of-week historical average beat both the Ridge and the gradient boosting model.** All three land inside the same bootstrap confidence interval, so the top three are **statistically tied**, and I say so rather than crowning a winner from noise.
+
+Permutation importance shows why. The model spent eighteen features rediscovering *what day is it, and how has business been lately*, which is exactly what the simple average already encodes. Everything beats the manager's natural heuristic by 18 to 28 percent, and nothing justifies shipping a trained model here.
+
+Validation is **walk-forward, never a random split**, and six tests in the suite exist purely to prove no feature can see its own future.
+
+<br>
+
 ### 🗺️ [ruta-cartero](https://github.com/raulben6/ruta-cartero)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -187,10 +205,10 @@ Node.js bot for Interactive Brokers with a generic host and swappable strategies
 
 <table>
 <tr>
-<td align="center" width="25%"><h2>4</h2><b>public projects</b></td>
-<td align="center" width="25%"><h2>631</h2><b>automated tests</b></td>
-<td align="center" width="25%"><h2>292</h2><b>commits</b></td>
-<td align="center" width="25%"><h2>36k</h2><b>lines shipped</b></td>
+<td align="center" width="25%"><h2>5</h2><b>public projects</b></td>
+<td align="center" width="25%"><h2>645</h2><b>automated tests</b></td>
+<td align="center" width="25%"><h2>293</h2><b>commits</b></td>
+<td align="center" width="25%"><h2>37k</h2><b>lines shipped</b></td>
 </tr>
 </table>
 
