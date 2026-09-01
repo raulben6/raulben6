@@ -26,7 +26,7 @@ I develop **with** AI, not around it. My workflow is spec first: I write the des
 
 You can check that claim. Every product repo here carries the real specs and plans I worked from, in `docs/design/`, dated before the commits that implemented them.
 
-That discipline is why three production-grade products exist with **631 automated tests** behind them.
+That discipline is why three production-grade products exist with **636 automated tests** behind them.
 
 </td>
 <td width="50%" valign="top">
@@ -35,7 +35,7 @@ That discipline is why three production-grade products exist with **631 automate
 
 Before the products, data was the job. **ETL and ELT pipelines in Python**, integrity and validation checks, MongoDB and SQL sources reconciled against each other, and datasets loaded and analysed in **BigQuery** and **Cloud Storage**.
 
-The part I actually love is the modelling: choosing the representation that makes a hard question cheap to answer. A street network becomes a graph, a delivery round becomes an Eulerian path, and an NP-hard route collapses into something solvable.
+The part I actually love is the modelling: choosing the representation that makes a hard question cheap to answer. A street network becomes a graph and an NP-hard route collapses into something solvable. A noisy sales series becomes a question about whether the extra model earns its keep, which sometimes it does not.
 
 </td>
 </tr>
