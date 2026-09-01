@@ -82,7 +82,9 @@ Three findings, and two of them are negative. **A day-of-week average beat both 
 
 The third finding is the one worth acting on. Rain barely moves total sales, but it **doubles the delivery share of revenue**, from 12% to 25% (p = 0.001). Rain does not remove demand, it relocates it, which is exactly why weather cannot forecast the total: the channels compensate. And because the delivery marketplace takes an effective 27% cut, a rainy day converts the same revenue into **3.25 points less margin** (p = 0.0009).
 
-Weather is split into an **operational** mode (yesterday's observed weather, what production could actually use) and an **explanatory** one, because tomorrow's weather is a forecast, not a fact. Validation is walk-forward, never a random split, and nine of the fifteen tests exist purely to prove no feature can see its own future.
+Weather is split into an **operational** mode (yesterday's observed weather, what production could actually use) and an **explanatory** one, because tomorrow's weather is a forecast, not a fact. Validation is walk-forward, never a random split, and nine of the twenty-five tests exist purely to prove no feature can see its own future.
+
+The repo also carries a **read-only exporter for product-level demand**, validated against a live production Postgres: one `SELECT`, aggregated in the database, no access to personal data, amounts indexed before they are written. It reports descriptives at any volume but **refuses to emit forecast metrics below a data threshold**, because the POS has no sales history yet and a model fitted on a handful of rows per product is not a result.
 
 <br>
 
@@ -206,9 +208,9 @@ Node.js bot for Interactive Brokers with a generic host and swappable strategies
 <table>
 <tr>
 <td align="center" width="25%"><h2>5</h2><b>public projects</b></td>
-<td align="center" width="25%"><h2>645</h2><b>automated tests</b></td>
-<td align="center" width="25%"><h2>293</h2><b>commits</b></td>
-<td align="center" width="25%"><h2>37k</h2><b>lines shipped</b></td>
+<td align="center" width="25%"><h2>661</h2><b>automated tests</b></td>
+<td align="center" width="25%"><h2>295</h2><b>commits</b></td>
+<td align="center" width="25%"><h2>38k</h2><b>lines shipped</b></td>
 </tr>
 </table>
 
