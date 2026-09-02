@@ -133,7 +133,7 @@ A trading journal with a mentor on the other side. **Every metric is derived fro
 ![Prisma](https://img.shields.io/badge/Prisma_6-2D3748?style=flat-square&logo=prisma&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 
-Personal finance built as a real product, and **[you can use it right now](https://growly-three.vercel.app)**. Money is stored in **integer cents, never floats**, and recurring transactions are made **idempotent by a database constraint** rather than by trusting a job to run exactly once.
+Personal finance built as a real product, and **[you can use it right now](https://growly-three.vercel.app/login)** with no sign-up: `demo@growly.app` / `GrowlyDemo2026`. Money is stored in **integer cents, never floats**, and recurring transactions are made **idempotent by a database constraint** rather than by trusting a job to run exactly once.
 
 <details>
 <summary>🔒 <b>Also: an automated trading bot</b> (private, collaborative)</summary>
