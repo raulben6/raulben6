@@ -119,6 +119,7 @@ A real-time POS **deployed at a working restaurant**. Orders appear on the kitch
 
 ### 📈 [Smart Trader Performance System](https://github.com/raulben6/smart-money-app)
 
+[![Live](https://img.shields.io/badge/%F0%9F%9F%A2_deployed-10B981?style=flat-square)](https://smart-money-app-two.vercel.app)
 ![Tests](https://img.shields.io/badge/302_tests-6E9F18?style=flat-square&logo=vitest&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black)
